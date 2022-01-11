@@ -1,0 +1,82 @@
+.footer {
+  // .footer__flex-container
+  &__flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+
+    @media (max-width: 1279.98px) {
+      flex-direction: column;
+      height: 190px;
+      padding: 30px 0 25px;
+    }
+  }
+
+  // .footer__copyright
+  &__copyright {
+    flex: 0 0 215px;
+
+    @media (max-width: 1279.98px) {
+      flex: 1 1 auto;
+    }
+
+    & span {
+      margin: 0 10px 0 20px;
+    }
+  }
+
+  // .footer__my-git
+  &__my-git {
+    color: var(--color-white);
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--color-gold);
+    }
+  }
+
+  // .footer__rss
+  &__rss {
+    flex: 0 0 215px;
+    text-align: center;
+
+    @media (max-width: 1279.98px) {
+      flex: 1 1 auto;
+    }
+  }
+
+  // .footer__rss-link
+  &__rss-link {
+    color: var(--color-white);
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--color-gold);
+    }
+  }
+
+  // .footer__social-media
+  &__social-media {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    flex: 0 0 215px;
+
+    @media (max-width: 1279.98px) {
+      flex: 1 1 auto;
+    }
+  }
+
+  // .footer__icon
+  &__icon {
+    width: 32px;
+    height: 32px;
+    transition: 0.3s;
+
+    &:hover {
+      filter: invert(21%) sepia(10%) saturate(1031%) hue-rotate(7deg) brightness(89%) contrast(85%);
+    }
+  }
+}

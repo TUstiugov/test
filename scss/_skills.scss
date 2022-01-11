@@ -1,0 +1,91 @@
+.skills {
+  // .skills__title
+  &__title {
+    @media (max-width: 1279.98px) {
+      margin: 0 0 56px 0;
+    }
+  }
+
+  // .skills__flex-container
+  &__flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media (max-width: 1439.98px) {
+      justify-content: center;
+      gap: 50px;
+    }
+
+    @media (max-width: 1279.98px) {
+      justify-content: space-between;
+      padding: 9px 40px 40px;
+      gap: 36px;
+    }
+
+    @media (max-width: 767.98px) {
+      padding: 0;
+    }
+  }
+
+  // .skills__flex-item
+  &__flex-item {
+    flex: 0 0 320px;
+
+    @media (max-width: 1439.98px) {
+      margin: 0 50px;
+    }
+
+    @media (max-width: 1279.98px) {
+      flex: 0 0 300px;
+      margin: 0;
+    }
+
+    @media (max-width: 767.98px) {
+      flex: 250px;
+    }
+  }
+
+  // .skills__card
+  &__card {
+    text-align: center;
+  }
+}
+
+.card-skill {
+  // .card-skill__image
+  &__image {
+    height: 50px;
+    margin: 0 0 50px 0;
+
+    @media (max-width: 1279.98px) {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  // .card-skill__icon
+  &__icon {
+    height: 50px;
+  }
+
+  // .card-skill__subtitle
+  &__subtitle {
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    line-height: 2em;
+  }
+
+  // .card-skill__info
+  &__info {
+    padding: 0 18px 10px;
+    font-size: 0.9rem;
+    line-height: 2em;
+    letter-spacing: 0.3px;
+
+    @media (max-width: 1279.98px) {
+      padding: 0 5px 40px;
+      line-height: 22px;
+    }
+  }
+}

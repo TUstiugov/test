@@ -1,0 +1,67 @@
+.hero {
+  height: 910px;
+  padding: 250px 0 0 80px;
+  background: url("../img/01-hero/background.jpg") 0 0 no-repeat;
+
+  @media (max-width: 1279.98px) {
+    height: 590px;
+    padding: 168px 0 0 60px;
+    background: url("../img/01-hero/background-small.jpg") 0 0 no-repeat;
+  }
+
+  @media (max-width: 767.98px) {
+    background-position: -310px 0;
+  }
+  // .hero__content
+  &__content {
+    width: 490px;
+
+    @media (max-width: 1279.98px) {
+      width: 405px;
+    }
+
+    @media (max-width: 767.98px) {
+      width: 250px;
+    }
+  }
+
+  // .hero__name
+  &__name {
+    margin: 0 0 10px 0;
+    font-family: "Merriweather", serif;
+    font-size: 3rem;
+    line-height: 2em;
+    font-weight: 700;
+
+    @media (max-width: 1279.98px) {
+      margin: 0 0 20px 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  // .hero__text
+  &__text {
+    margin: 0 0 25px 0;
+    line-height: 2em;
+
+    @media (max-width: 1279.98px) {
+      margin: 0 0 58px 0;
+      font-size: 1rem;
+      line-height: 24.2px;
+      letter-spacing: 0;
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: 0.8rem;
+    }
+  }
+
+  // .hero__button
+  &__button {
+  }
+}
